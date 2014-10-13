@@ -1,0 +1,10 @@
+[
+    {
+        "name": "map",
+        "display-name": "Map",
+        "template-url": "pages/map.html",
+        "type": "section",
+        "active": false
+    }
+
+]

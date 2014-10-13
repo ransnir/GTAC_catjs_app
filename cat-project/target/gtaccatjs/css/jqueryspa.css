@@ -1,0 +1,572 @@
+/*
+ * HP fonts imports
+ */
+@font-face {
+  font-family: 'HPSimplified';
+  src: url('fonts/hpsimplified-regular-eot.eot');
+  src: url('fonts/hpsimplified-regular-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-regular-woff.woff') format('woff'), url('fonts/hpsimplified-regular-ttf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HPSimplifiedBold';
+  src: url('fonts/hpsimplified-bold-eot.eot');
+  src: url('fonts/hpsimplified-bold-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-bold-woff.woff') format('woff'), url('fonts/hpsimplified-bold-ttf.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HPSimplifiedBoldItalic';
+  src: url('fonts/hpsimplified-bolditalic-eot.eot');
+  src: url('fonts/hpsimplified-bolditalic-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-bolditalic-woff.woff') format('woff'), url('fonts/hpsimplified-bolditalic-ttf.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HPSimplifiedItalic';
+  src: url('fonts/hpsimplified-italic-eot.eot');
+  src: url('fonts/hpsimplified-italic-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-italic-woff.woff') format('woff'), url('fonts/hpsimplified-italic-ttf.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'HPSimplifiedLight';
+  src: url('fonts/hpsimplified-light-eot.eot');
+  src: url('fonts/hpsimplified-light-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-light-woff.woff') format('woff'), url('fonts/hpsimplified-light-ttf.ttf') format('truetype');
+}
+/* line 42, /Users/ransnir/Documents/workspace/GTAC/web/css/less/base.less */
+HTML,
+BODY {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "HPSimplifiedLight", "Trebuchet MS", Arial !important;
+  font-size: 16px;
+  color: #000000;
+}
+/* line 8, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map map,
+#map div[map] {
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+/* line 11, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI {
+  height: 100%;
+  width: 100%;
+  background: #08b4d3;
+  /* Old browsers */
+  background: -moz-linear-gradient(-60deg, rgba(8, 180, 211, 0.7) 0%, rgba(106, 0, 225, 0.7) 46%, rgba(185, 15, 96, 0.7) 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(8, 180, 211, 0.7)), color-stop(46%, rgba(106, 0, 225, 0.7)), color-stop(100%, rgba(185, 15, 96, 0.7)));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(-60deg, rgba(8, 180, 211, 0.7) 0%, rgba(106, 0, 225, 0.7) 46%, rgba(185, 15, 96, 0.7) 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-60deg, rgba(8, 180, 211, 0.7) 0%, rgba(106, 0, 225, 0.7) 46%, rgba(185, 15, 96, 0.7) 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(-60deg, rgba(8, 180, 211, 0.7) 0%, rgba(106, 0, 225, 0.7) 46%, rgba(185, 15, 96, 0.7) 100%);
+  /* IE10+ */
+  background: linear-gradient(135deg, rgba(8, 180, 211, 0.7) 0%, rgba(106, 0, 225, 0.7) 46%, rgba(185, 15, 96, 0.7) 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@color1', endColorstr='@color3', GradientType=1);
+  /* IE6-9 fallback on horizontal gradient */
+  z-index: 50;
+  position: absolute;
+}
+/* line 25, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+/* line 30, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper {
+  width: 100%;
+  position: relative;
+}
+/* line 34, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+}
+/* line 41, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #amIatText {
+  line-height: 1;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  padding: 0 20px;
+  display: table-cell;
+}
+/* line 50, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper {
+  margin: 0 20px;
+  padding-top: 4px;
+}
+/* line 54, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper #fakeLabel {
+  display: none;
+  margin-bottom: 0 !important;
+}
+/* line 59, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper span {
+  top: auto !important;
+  bottom: 0;
+  position: absolute;
+}
+/* line 65, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper #inputWhere {
+  width: 100%;
+}
+/* line 74, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper .disableBtn {
+  display: none !important;
+}
+/* line 78, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #wrapperGoBtn {
+  display: block;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+/* line 85, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #wrapperGoBtn #goBtn {
+  font-family: "HPSimplified", "Trebuchet MS", Arial !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 45%;
+  height: 45%;
+  margin: auto;
+  font-size: 55px;
+  outline: none !important;
+  border-radius: 50%;
+  color: #8c7a93;
+}
+@media (min-width: 1025px), (min-width: 1281px), (min-width: 641px), (min-width: 801px) {
+  /* line 115, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  #map #floatingUI #UIWrapper {
+    width: 300px !important;
+    height: 600px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  /* line 123, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  #map #floatingUI #UIWrapper #floatingTextWrapper {
+    height: 300px !important;
+  }
+  /* line 127, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  #map #floatingUI #UIWrapper #wrapperGoBtn {
+    width: 100%;
+    bottom: auto;
+  }
+}
+/* line 140, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map .removeFloating {
+  -webkit-animation-name: removeAni;
+  -moz-animation-name: removeAni;
+  -o-animation-name: removeAni;
+  animation-name: removeAni;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -moz-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -o-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@keyframes removeAni {
+  /* line 165, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 168, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes removeAni {
+  /* line 173, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 176, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes removeAni {
+  /* line 182, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 185, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes removeAni {
+  /* line 192, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 195, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes removeAni {
+  /* line 202, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 205, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+/* line 212, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map #mapWrapper {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+/* line 223, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+#map .removeBlur {
+  -webkit-animation-name: removeBlurAni;
+  -moz-animation-name: removeBlurAni;
+  -o-animation-name: removeBlurAni;
+  animation-name: removeBlurAni;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -moz-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -o-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@keyframes removeBlurAni {
+  /* line 247, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+  /* line 253, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+}
+@-webkit-keyframes removeBlurAni {
+  /* line 261, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+  /* line 267, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+}
+@-moz-keyframes removeBlurAni {
+  /* line 276, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+  /* line 282, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+}
+@-ms-keyframes removeBlurAni {
+  /* line 291, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+  /* line 297, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+}
+@-o-keyframes removeBlurAni {
+  /* line 307, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  0% {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+  }
+  /* line 313, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+}
+/* Navigation Links */
+/* line 2, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav {
+  text-align: center;
+}
+/* line 4, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav #menu {
+  opacity: 1;
+}
+/* line 8, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav #menu-options {
+  display: none;
+}
+/* line 14, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav ul {
+  display: inline-block;
+}
+/* line 18, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav ul li {
+  float: left;
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  position: relative;
+  display: block;
+  height: 55px;
+  width: 120px;
+  top: 0px;
+}
+/* line 28, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav ul li a {
+  -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  -o-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 1px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 55px;
+  width: 120px;
+  outline: 0;
+  text-decoration: none;
+}
+/* line 43, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav ul li a.active {
+  -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  -o-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+  font-size: 24px;
+  font-weight: bold;
+  top: 0;
+}
+/* line 54, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+nav ul li:hover,
+nav ul li.active {
+  -webkit-transition: background-color 0.4s ease-in-out;
+  -moz-transition: background-color 0.4s ease-in-out;
+  -o-transition: background-color 0.4s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+  background-color: #000000;
+}
+@media only screen and (max-width: 720px), screen and (max-device-width: 480px) and (min-device-width: 320px) {
+  /* line 3, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav {
+    text-align: right;
+  }
+  /* line 5, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav #menu-options {
+    display: block;
+    position: absolute;
+    color: #ffffff;
+    top: 0;
+    z-index: 1;
+    width: 120px;
+    height: 55px;
+    line-height: 55px;
+    right: 0px;
+    text-align: center;
+    border-left: 1px solid white;
+    background-color: #5E5C5C;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+  /* line 24, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav #menu {
+    display: inline-block;
+    margin-top: 55px;
+    opacity: 0.7;
+  }
+  /* line 29, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav #menu .fold {
+    opacity: 0;
+  }
+  /* line 34, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav .opacity-off {
+    opacity: 1 !important;
+  }
+  /* line 37, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav .opacity-on {
+    opacity: 0.7 !important;
+  }
+  /* line 40, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav .opacity-full {
+    opacity: 0 !important;
+  }
+  /* line 46, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav ul {
+    padding: 10px 0 10px 0 ;
+    -webkit-border-radius: 0px 0px 0px 8px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0px 0px 0px 8px;
+    -moz-background-clip: padding;
+    border-radius: 0px 0px 0px 8px;
+    background-clip: padding-box;
+  }
+  /* line 51, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav ul li {
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+    float: none;
+    text-align: center;
+  }
+  /* line 53, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav ul li a {
+    -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    -o-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    display: inline;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-decoration: none;
+    outline: 0;
+  }
+  /* line 64, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav ul li a.active {
+    display: inline;
+    -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    -o-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
+    background-color: #000000;
+    font-size: 24px;
+    top: 0;
+    font-weight: bold;
+  }
+  /* line 79, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav ul li .fold {
+    top: -100px;
+  }
+  /* line 84, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  nav ul li:hover,
+  nav ul li.active {
+    -webkit-transition: background-color 0.4s ease-in-out;
+    -moz-transition: background-color 0.4s ease-in-out;
+    -o-transition: background-color 0.4s ease-in-out;
+    transition: background-color 0.4s ease-in-out;
+    background-color: #000000;
+  }
+}
+/* line 6, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+header {
+  position: relative;
+  top: 0px;
+}
+/* line 56, /Users/ransnir/Documents/workspace/GTAC/web/css/less/base.less */
+section H1 {
+  text-align: left;
+  font-size: 52px;
+  font-weight: bold;
+  text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+/* UL LI */
+/* line 17, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* Anchor */
+/* line 24, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+a {
+  color: #00A2CA;
+  text-decoration: none;
+  z-index: 1;
+  position: relative;
+}
+/* line 31, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+nav {
+  display: none;
+  background-color: #23242A;
+  position: fixed;
+  z-index: 100000;
+  width: 100%;
+  height: 55px;
+  top: 0;
+}
+/* line 41, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+nav ul {
+  background-color: #23242A;
+}

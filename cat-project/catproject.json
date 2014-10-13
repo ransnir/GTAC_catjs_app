@@ -1,0 +1,69 @@
+{
+    "name": "gtaccatjs",
+
+    "source": "src/",
+    "target": "target/",
+    "cattarget": "./",
+
+    "host": "10.0.0.5",
+    "port": "8089",
+    "protocol": "http",
+    "analytics" : "Y",
+    "apppath": "./../web",
+    "appserver": {
+        "host": "10.0.0.2",
+        "port": "8089",
+        "protocol": "http"
+    },
+
+
+    "runner": {
+        "run": {
+            "devices": [
+                {
+                    "disable": true,
+                    "type": "localpc",
+                    "runner": {
+                        "name": "chrome",
+                        "address": "/",
+                        "options" : {"path" : "chrome.sh"}
+                    }
+                },
+                {
+                    "disable": true,
+                    "type": "localpc",
+                    "runner": {
+                        "name": "safari",
+                        "address": "/",
+                        "options" : {"path" : "safari.sh"}
+                    }
+                },
+                {
+                    "type": "android",
+                    "id": "all",
+                    "runner": {
+                        "name": "apk",
+                        "address": "/index.html",
+                        "options": {
+                            "path": "./lib/resources"
+                        }
+                    }
+                }
+            ]
+        },
+        "server": {
+            "host": "10.0.0.2",
+            "port": "8089"
+        }
+    },
+
+    "plugins": [
+
+    ],
+
+    "tasks": [
+
+    ]
+
+
+}

@@ -1,0 +1,8 @@
+node_modules
+tmp
+.idea
+.cat
+.DS_Store
+*.log
+*.xml
+
