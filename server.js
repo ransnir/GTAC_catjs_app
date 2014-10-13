@@ -17,8 +17,7 @@ var app = express();
 
     app.use(allowCrossDomain);
 
-    app.use(express.static(path.join(__dirname, '/')));
-//    app.use(express.static(path.join(__dirname, 'web')));
+app.use(express.static(path.join(__dirname, 'web')));
 
 
 
