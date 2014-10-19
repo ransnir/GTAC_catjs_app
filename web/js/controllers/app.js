@@ -87,9 +87,9 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
             /*
              @[scrap
-             @@name checkDis
-             @@context $scope
-             @@assert ok(google.maps.geometry.spherical.computeDistanceBetween($scope.pointA, $scope.pointB) < 5000,'points are to far')
+                 @@name checkDis
+                 @@context $scope
+                 @@assert ok(google.maps.geometry.spherical.computeDistanceBetween($scope.pointA, $scope.pointB) < 5000,'points are to far')
              ]@
              */
             $scope.$apply();
