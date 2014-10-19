@@ -1,4 +1,4 @@
-GTAC_catjs_app
+GTAC-demo app : catjs + Angularjs + GoogleMaps
 ==============
 This is a demo that will be presented in GTAC
 The application is base on angularjs + google maps + catjs
@@ -19,4 +19,4 @@ The application is base on angularjs + google maps + catjs
 
     node server.js
 
-go to : (localhost:555)
+go to : (localhost:555)[localhost:555]
