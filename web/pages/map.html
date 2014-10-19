@@ -2,24 +2,25 @@
     <div id="UIWrapper">
 
 
-        <!--
-              @[scrap
-                 @@name setWhere
-                 @@embed true
-                 @@jqm setText("#inputWhere", "google kirkland")
-              ]@
-        -->
         <div id="floatingTextWrapper" ng-style="setDynamicHeight(false)">
             <div id="floatingTextInner">
                 <div id="amIatText">I am at</div>
                 <div id="whereWrapper" class="form-group has-feedback">
                     <label id="fakeLabel" class="control-label" for="inputWhere"></label>
-                    <input ng-model="searchText" class="form-control" id="inputWhere" ng-blur="keyboardManagment()" ng-focus="keyboardManagment()">
+
+
+                    <!--
+                          @[scrap
+                             @@name setWhere
+                             @@embed true
+                             @@jqm setText("#inputWhere", "hp software israel")
+                          ]@
+                    -->
+                    <input ng-model="searchText" class="form-control" id="inputWhere"
+                           ng-blur="keyboardManagment()" ng-focus="keyboardManagment()">
                     <span class="glyphicon glyphicon-globe form-control-feedback"></span>
                 </div>
-
             </div>
-
         </div>
 
 
@@ -34,17 +35,18 @@
             <button id="goBtn" class="btn btn-default" ng-click="go()">GO!</button>
         </div>
 
-
     </div>
 </div>
 
         <div id="mapWrapper">
-            <map ng-style="setMapHeight()" id="guessmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}" ng-model="address" ng-model="mapZoom">
-                <marker position="{{predictionLoc}}" ng-model="predictionLoc"></marker>
-                <!--<marker position="current" animation="Animation.BOUNCE"></marker>-->
+            <map ng-style="setMapHeight()" id="startMap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}">
             </map>
 
-            <map ng-style="setMapHeight()" id="realmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{realLoc}}" ng-model="realLoc" ng-model="mapZoom">
+            <map ng-style="setMapHeight()" class="halfMap" id="guessmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}" ng-model="address" ng-model="mapZoom">
+                <marker position="{{predictionLoc}}" ng-model="predictionLoc"></marker>
+            </map>
+
+            <map ng-style="setMapHeight()" class="halfMap" id="realmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{realLoc}}" ng-model="realLoc" ng-model="mapZoom">
                 <marker position="{{realLoc}}" ng-model="realLoc"></marker>
             </map>
 

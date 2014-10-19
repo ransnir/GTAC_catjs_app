@@ -5,8 +5,19 @@
 
 #map {
 
-  map, div[map] {display:block; width:100%; height:100px;}
+  map, div[map] {display:block; width:100%; height:0px;}
+  #startMap {
+    z-index: 10;
+    position: absolute;
+  }
 
+  #guessmap {
+    padding-bottom: 10px;
+  }
+
+  #realmap {
+    padding-top: 10px;
+  }
 
   #floatingUI {
     height: 100%;
@@ -103,15 +114,11 @@
     }
 
 
-
     @media (min-width:1025px), (min-width:1281px),
           (min-width:641px),
           (min-width:801px)
     {
 
-      #floatingUI {
-//        background: red;
-      }
       #UIWrapper {
         width: 300px !important;
         height: 600px;
@@ -122,6 +129,10 @@
 
         #floatingTextWrapper {
           height: 300px !important;
+        }
+
+        .disableBtn {
+          display: block !important;
         }
 
         #wrapperGoBtn {
@@ -167,6 +178,7 @@
     }
     100% {
       opacity:0;
+      z-index: -1;
     }
   }
   @-webkit-keyframes removeAni {
@@ -175,6 +187,7 @@
     }
     100% {
       opacity:0;
+      z-index: -1;
     }
   }
 
@@ -184,6 +197,7 @@
     }
     100% {
       opacity:0;
+      z-index: -1;
     }
   }
 
@@ -194,6 +208,7 @@
     }
     100% {
       opacity:0;
+      z-index: -1;
     }
   }
 
@@ -204,6 +219,7 @@
     }
     100% {
       opacity:0;
+      z-index: -1;
     }
   }
 

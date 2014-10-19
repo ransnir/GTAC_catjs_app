@@ -16,7 +16,9 @@ require.config({
         propertyParser : '../bower_components/requirejs-plugins/src/propertyParser'
 
 	},
-	shim: {
+    waitSeconds: 60,
+
+    shim: {
         async: {
             deps:['jquery']
         },
@@ -46,7 +48,6 @@ require.config({
         ]
     ]@
 */
-
 /*
     Initial require call
  */
