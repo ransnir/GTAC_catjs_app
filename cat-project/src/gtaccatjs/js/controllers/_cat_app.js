@@ -3,25 +3,25 @@ _cat.core.declare('gtaccatjs.js.controllers.app.checkDis$$cat', {
     "name": ["checkDis"],
     "context": ["thi$", "$scope"],
     "assert": ["ok(google.maps.geometry.spherical.computeDistanceBetween($scope.pointA, $scope.pointB) < 5000,'points are to far')"],
-    "file": "/Users/ransnir/Documents/workspace/GTAC/cat-project/target/gtaccatjs/js/controllers/app.js",
+    "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/js/controllers/app.js",
     "scrapinfo": {
       "start": {
-        "line": 84,
-        "col": 33
+        "line": 88,
+        "col": 13
       },
       "end": {
-        "line": 88,
-        "col": 35
+        "line": 92,
+        "col": 15
       }
     },
     "commentinfo": {
       "start": {
-        "line": 83,
-        "col": 28
+        "line": 87,
+        "col": 12
       },
       "end": {
-        "line": 89,
-        "col": 31
+        "line": 93,
+        "col": 15
       }
     },
     "single": {
@@ -59,7 +59,7 @@ _cat.core.declare('gtaccatjs.js.controllers.app.checkDis$$cat', {
     "arguments": ["thi$", "$scope"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_bdc20cee-116d-384f-a332-a30c2873e921",
+    "id": "scrap_16cfe6ba-cbec-0338-b1b4-68e3bc95e7ca",
     "$type": "js",
     "numCommands": 1,
     "pkgName": "gtaccatjs.js.controllers.app.checkDis"

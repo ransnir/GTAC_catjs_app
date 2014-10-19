@@ -2,26 +2,26 @@ _cat.core.declare('gtaccatjs.pages.map.html.setWhere$$cat', {
   scrap: {
     "name": ["setWhere"],
     "embed": ["true"],
-    "jqm": ["setText(\"#inputWhere\", \"google kirkland\")"],
-    "file": "/Users/ransnir/Documents/workspace/GTAC/cat-project/target/gtaccatjs/pages/map.html",
+    "jqm": ["setText(\"#inputWhere\", \"hp software israel\")"],
+    "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/pages/map.html",
     "scrapinfo": {
       "start": {
-        "line": 6,
-        "col": 14
+        "line": 13,
+        "col": 26
       },
       "end": {
-        "line": 10,
-        "col": 16
+        "line": 17,
+        "col": 28
       }
     },
     "commentinfo": {
       "start": {
-        "line": 5,
-        "col": 8
+        "line": 12,
+        "col": 20
       },
       "end": {
-        "line": 11,
-        "col": 11
+        "line": 18,
+        "col": 23
       }
     },
     "single": {
@@ -62,7 +62,7 @@ _cat.core.declare('gtaccatjs.pages.map.html.setWhere$$cat', {
     "context": ["thi$"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_272e8235-7053-c64f-24e2-d3415cec86d1",
+    "id": "scrap_e30ddc2f-0e23-e298-833f-7623157af67a",
     "$type": "html",
     "numCommands": 2,
     "pkgName": "gtaccatjs.pages.map.html.setWhere"
@@ -86,11 +86,11 @@ _cat.core.define("gtaccatjs.pages.map.html.setWhere$$cat", function(thi$) {
   }
 
   /* test content in here */
-  _cat.core.clientmanager.delayManager(["_cat.core.ui.setContent({style: 'color:#0080FF', header: 'setWhere', desc: 'setText(\"#inputWhere\", \"google kirkland\")',tips: ''});"], {
+  _cat.core.clientmanager.delayManager(["_cat.core.ui.setContent({style: 'color:#0080FF', header: 'setWhere', desc: 'setText(\"#inputWhere\", \"hp software israel\")',tips: ''});"], {
     scrap: _ipkg.scrap,
     args: _args
   });
-  _cat.core.clientmanager.delayManager(["_cat.core.plugin(\"jqm\").actions.setText(\"#inputWhere\", \"google kirkland\");"], {
+  _cat.core.clientmanager.delayManager(["_cat.core.plugin(\"jqm\").actions.setText(\"#inputWhere\", \"hp software israel\");"], {
     scrap: _ipkg.scrap,
     args: _args
   });
@@ -100,24 +100,24 @@ _cat.core.declare('gtaccatjs.pages.map.html.clickGo$$cat', {
     "name": ["clickGo"],
     "embed": ["true"],
     "jqm": ["click(\"#goBtn\")"],
-    "file": "/Users/ransnir/Documents/workspace/GTAC/cat-project/target/gtaccatjs/pages/map.html",
+    "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/pages/map.html",
     "scrapinfo": {
       "start": {
-        "line": 27,
+        "line": 29,
         "col": 14
       },
       "end": {
-        "line": 31,
+        "line": 33,
         "col": 16
       }
     },
     "commentinfo": {
       "start": {
-        "line": 26,
+        "line": 28,
         "col": 8
       },
       "end": {
-        "line": 32,
+        "line": 34,
         "col": 11
       }
     },
@@ -159,7 +159,7 @@ _cat.core.declare('gtaccatjs.pages.map.html.clickGo$$cat', {
     "context": ["thi$"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_057f2c55-3d0c-a599-9b4f-050992b9b610",
+    "id": "scrap_6e61d680-ba37-a3ad-b9a6-80c7451bba03",
     "$type": "html",
     "numCommands": 2,
     "pkgName": "gtaccatjs.pages.map.html.clickGo"
