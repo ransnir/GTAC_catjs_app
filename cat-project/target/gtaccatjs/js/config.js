@@ -16,7 +16,9 @@ require.config({
         propertyParser : '../bower_components/requirejs-plugins/src/propertyParser'
 
 	},
-	shim: {
+    waitSeconds: 60,
+
+    shim: {
         async: {
             deps:['jquery']
         },
@@ -57,7 +59,6 @@ require(["chai","jspath","tmr","cat","catsrc"], function(chai,jspath,tmr,cat,cat
     _cat.utils.Loader.requires(["/cat/lib/cat.css"])
 
 });
-
 /*
     Initial require call
  */

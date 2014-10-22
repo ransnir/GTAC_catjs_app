@@ -17,4 +17,5 @@
     {"name":"setWhere"},
     {"name":"clickGo"},
     {"name":"checkDis"}]}
-},"ui":true,"report":{"format":["console","junit"],"disable":false},"assert":{"errors":true},"run-mode":"tests","test-failure-timeout":30}
+},"ui":true,"report":{"format":["console","junit"],"disable":false},"assert":{"errors":true},
+    "run-mode":"tests","test-failure-timeout":30}

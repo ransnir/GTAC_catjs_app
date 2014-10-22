@@ -1444,6 +1444,7 @@ _cat.core.TestManager = function() {
     return {
 
         addTestData: function(config) {
+            debugger;
             var data = new _Data(config);
             _testsData.push(data);
             if (config.success) {
@@ -1862,7 +1863,7 @@ _cat.core.ui = function () {
                                 if ("desc" in config) {
                                     _setText(newLI.childNodes[1], config.desc, config.style);
                                 }
-
+                                console.log(config);
                                 if ("tips" in config) {
                                     if (config.tips) {
                                         testNumber  = config.tips;
@@ -2078,6 +2079,7 @@ _cat.utils.Signal = function () {
                         });
 
                     } else {
+                        debugger;
                         testCount = _cat.core.TestManager.getTestCount();
                         _cat.core.ui.setContent({
                             header: [testCount-1, "Tests complete"].join(" "),

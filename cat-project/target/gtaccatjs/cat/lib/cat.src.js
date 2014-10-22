@@ -112,25 +112,25 @@ _cat.core.declare('gtaccatjs.js.controllers.app.checkDis$$cat', {
     "name": ["checkDis"],
     "context": ["thi$", "$scope"],
     "assert": ["ok(google.maps.geometry.spherical.computeDistanceBetween($scope.pointA, $scope.pointB) < 5000,'points are to far')"],
-    "file": "/Users/ransnir/Documents/workspace/GTAC/cat-project/target/gtaccatjs/js/controllers/app.js",
+    "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/js/controllers/app.js",
     "scrapinfo": {
       "start": {
-        "line": 84,
-        "col": 33
+        "line": 100,
+        "col": 25
       },
       "end": {
-        "line": 88,
-        "col": 35
+        "line": 104,
+        "col": 27
       }
     },
     "commentinfo": {
       "start": {
-        "line": 83,
-        "col": 28
+        "line": 99,
+        "col": 24
       },
       "end": {
-        "line": 89,
-        "col": 31
+        "line": 105,
+        "col": 27
       }
     },
     "single": {
@@ -168,7 +168,7 @@ _cat.core.declare('gtaccatjs.js.controllers.app.checkDis$$cat', {
     "arguments": ["thi$", "$scope"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_bdc20cee-116d-384f-a332-a30c2873e921",
+    "id": "scrap_38f4e52d-35de-8893-96d1-b69c37306071",
     "$type": "js",
     "numCommands": 1,
     "pkgName": "gtaccatjs.js.controllers.app.checkDis"
@@ -238,25 +238,25 @@ _cat.core.declare('gtaccatjs.pages.map.html.setWhere$$cat', {
     "name": ["setWhere"],
     "embed": ["true"],
     "jqm": ["setText(\"#inputWhere\", \"google kirkland\")"],
-    "file": "/Users/ransnir/Documents/workspace/GTAC/cat-project/target/gtaccatjs/pages/map.html",
+    "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/pages/map.html",
     "scrapinfo": {
       "start": {
-        "line": 6,
-        "col": 14
+        "line": 14,
+        "col": 26
       },
       "end": {
-        "line": 10,
-        "col": 16
+        "line": 18,
+        "col": 28
       }
     },
     "commentinfo": {
       "start": {
-        "line": 5,
-        "col": 8
+        "line": 13,
+        "col": 26
       },
       "end": {
-        "line": 11,
-        "col": 11
+        "line": 19,
+        "col": 29
       }
     },
     "single": {
@@ -297,7 +297,7 @@ _cat.core.declare('gtaccatjs.pages.map.html.setWhere$$cat', {
     "context": ["thi$"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_272e8235-7053-c64f-24e2-d3415cec86d1",
+    "id": "scrap_c93a0f45-4e1f-5667-ca99-6d8c1902502c",
     "$type": "html",
     "numCommands": 2,
     "pkgName": "gtaccatjs.pages.map.html.setWhere"
@@ -335,24 +335,24 @@ _cat.core.declare('gtaccatjs.pages.map.html.clickGo$$cat', {
     "name": ["clickGo"],
     "embed": ["true"],
     "jqm": ["click(\"#goBtn\")"],
-    "file": "/Users/ransnir/Documents/workspace/GTAC/cat-project/target/gtaccatjs/pages/map.html",
+    "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/pages/map.html",
     "scrapinfo": {
       "start": {
-        "line": 27,
-        "col": 14
+        "line": 30,
+        "col": 8
       },
       "end": {
-        "line": 31,
-        "col": 16
+        "line": 34,
+        "col": 10
       }
     },
     "commentinfo": {
       "start": {
-        "line": 26,
+        "line": 29,
         "col": 8
       },
       "end": {
-        "line": 32,
+        "line": 35,
         "col": 11
       }
     },
@@ -394,7 +394,7 @@ _cat.core.declare('gtaccatjs.pages.map.html.clickGo$$cat', {
     "context": ["thi$"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_057f2c55-3d0c-a599-9b4f-050992b9b610",
+    "id": "scrap_deba62af-f199-49d3-877d-1908b621da5a",
     "$type": "html",
     "numCommands": 2,
     "pkgName": "gtaccatjs.pages.map.html.clickGo"

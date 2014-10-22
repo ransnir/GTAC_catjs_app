@@ -11,7 +11,7 @@
     "analytics" : "Y",
     "apppath": "./../web",
     "appserver": {
-        "host": "10.0.0.2",
+        "host": "10.0.0.5",
         "port": "8089",
         "protocol": "http"
     },
@@ -21,7 +21,7 @@
         "run": {
             "devices": [
                 {
-                    "disable": true,
+                    "disable": false,
                     "type": "localpc",
                     "runner": {
                         "name": "chrome",
@@ -48,11 +48,33 @@
                             "path": "./lib/resources"
                         }
                     }
+                },
+                {
+                    "disable": false,
+                    "type": "android",
+                    "id": "all",
+                    "runner": {
+                        "name": "apk",
+                        "address": "/index.html",
+                        "options": {
+                            "path": "./lib/resources"
+                        }
+                    }
+                },
+
+                {
+                    "type": "iphone",
+                    "disable" : false,
+                    "id": "all",
+                    "runner": {
+                        "name": "agent",
+                        "options" : { "ip" : "10.0.0.7", "port" : "54321", "path" : "/cat"}
+                    }
                 }
             ]
         },
         "server": {
-            "host": "10.0.0.2",
+            "host": "10.0.0.5",
             "port": "8089"
         }
     },

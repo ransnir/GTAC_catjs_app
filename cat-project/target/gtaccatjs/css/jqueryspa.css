@@ -30,7 +30,7 @@
   src: url('fonts/hpsimplified-light-eot.eot');
   src: url('fonts/hpsimplified-light-eot.eot?#iefix') format('embedded-opentype'), url('fonts/hpsimplified-light-woff.woff') format('woff'), url('fonts/hpsimplified-light-ttf.ttf') format('truetype');
 }
-/* line 42, /Users/ransnir/Documents/workspace/GTAC/web/css/less/base.less */
+/* line 42, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/base.less */
 HTML,
 BODY {
   margin: 0;
@@ -41,14 +41,68 @@ BODY {
   font-size: 16px;
   color: #000000;
 }
-/* line 8, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 9, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map map,
 #map div[map] {
   display: block;
   width: 100%;
-  height: 100px;
+  height: 0px;
 }
-/* line 11, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 13, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper .hideLiveMap {
+  opacity: 0;
+}
+/* line 17, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper .wrapLiveMap {
+  position: relative;
+}
+/* line 22, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper .wrapLiveMap .hoverTextMap {
+  background: rgba(0, 0, 0, 0.7);
+  background-clip: content-box;
+  position: absolute;
+  z-index: 1;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+/* line 33, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper .wrapLiveMap .hoverTextMap .mapText {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  white-space: nowrap;
+}
+/* line 52, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper #startMap {
+  z-index: 10;
+  position: absolute;
+}
+/* line 57, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper #guessmap {
+  padding-bottom: 10px;
+}
+/* line 60, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper #guessedText {
+  padding-bottom: 10px;
+}
+/* line 64, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper #realmap {
+  padding-top: 10px;
+}
+/* line 68, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #mapWrapper #whereIamText {
+  padding-top: 10px;
+}
+/* line 75, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI {
   height: 100%;
   width: 100%;
@@ -71,25 +125,25 @@ BODY {
   z-index: 50;
   position: absolute;
 }
-/* line 25, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 90, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
-/* line 30, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 95, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper {
   width: 100%;
   position: relative;
 }
-/* line 34, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 99, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner {
   width: 100%;
   margin: auto;
   position: absolute;
   bottom: 0;
 }
-/* line 41, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 106, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #amIatText {
   line-height: 1;
   text-align: center;
@@ -98,31 +152,37 @@ BODY {
   padding: 0 20px;
   display: table-cell;
 }
-/* line 50, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 115, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper {
   margin: 0 20px;
   padding-top: 4px;
 }
-/* line 54, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 120, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper .gps-icon {
+  background-image: url('images/gps.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+/* line 126, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper #fakeLabel {
   display: none;
   margin-bottom: 0 !important;
 }
-/* line 59, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 131, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper span {
   top: auto !important;
   bottom: 0;
   position: absolute;
 }
-/* line 65, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 137, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #floatingTextWrapper #floatingTextInner #whereWrapper #inputWhere {
   width: 100%;
 }
-/* line 74, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 146, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper .disableBtn {
   display: none !important;
 }
-/* line 78, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 150, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #wrapperGoBtn {
   display: block;
   width: 100%;
@@ -130,7 +190,7 @@ BODY {
   position: absolute;
   bottom: 0;
 }
-/* line 85, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 157, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #floatingUI #UIWrapper #wrapperGoBtn #goBtn {
   font-family: "HPSimplified", "Trebuchet MS", Arial !important;
   position: absolute;
@@ -147,7 +207,7 @@ BODY {
   color: #8c7a93;
 }
 @media (min-width: 1025px), (min-width: 1281px), (min-width: 641px), (min-width: 801px) {
-  /* line 115, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 183, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   #map #floatingUI #UIWrapper {
     width: 300px !important;
     height: 600px;
@@ -158,17 +218,21 @@ BODY {
     bottom: 0;
     right: 0;
   }
-  /* line 123, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 191, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   #map #floatingUI #UIWrapper #floatingTextWrapper {
     height: 300px !important;
   }
-  /* line 127, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 195, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  #map #floatingUI #UIWrapper .disableBtn {
+    display: block !important;
+  }
+  /* line 199, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   #map #floatingUI #UIWrapper #wrapperGoBtn {
     width: 100%;
     bottom: auto;
   }
 }
-/* line 140, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 212, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map .removeFloating {
   -webkit-animation-name: removeAni;
   -moz-animation-name: removeAni;
@@ -195,56 +259,61 @@ BODY {
   animation-direction: alternate;
 }
 @keyframes removeAni {
-  /* line 165, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 237, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     opacity: 1;
   }
-  /* line 168, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 240, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @-webkit-keyframes removeAni {
-  /* line 173, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 246, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     opacity: 1;
   }
-  /* line 176, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 249, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @-moz-keyframes removeAni {
-  /* line 182, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 255, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     opacity: 1;
   }
-  /* line 185, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 258, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @-ms-keyframes removeAni {
-  /* line 192, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 264, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     opacity: 1;
   }
-  /* line 195, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 267, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @-o-keyframes removeAni {
-  /* line 202, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 273, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     opacity: 1;
   }
-  /* line 205, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 276, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
-/* line 212, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 283, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map #mapWrapper {
   width: 100%;
   height: 100%;
@@ -254,7 +323,7 @@ BODY {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
 }
-/* line 223, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+/* line 294, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
 #map .removeBlur {
   -webkit-animation-name: removeBlurAni;
   -moz-animation-name: removeBlurAni;
@@ -281,14 +350,14 @@ BODY {
   animation-direction: alternate;
 }
 @keyframes removeBlurAni {
-  /* line 247, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 318, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
   }
-  /* line 253, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 324, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -297,14 +366,14 @@ BODY {
   }
 }
 @-webkit-keyframes removeBlurAni {
-  /* line 261, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 332, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
   }
-  /* line 267, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 338, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -313,14 +382,14 @@ BODY {
   }
 }
 @-moz-keyframes removeBlurAni {
-  /* line 276, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 346, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
   }
-  /* line 282, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 352, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -329,14 +398,14 @@ BODY {
   }
 }
 @-ms-keyframes removeBlurAni {
-  /* line 291, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 360, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
   }
-  /* line 297, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 366, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -345,14 +414,14 @@ BODY {
   }
 }
 @-o-keyframes removeBlurAni {
-  /* line 307, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 374, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   0% {
     -webkit-filter: blur(5px);
     -moz-filter: blur(5px);
     -o-filter: blur(5px);
     -ms-filter: blur(5px);
   }
-  /* line 313, /Users/ransnir/Documents/workspace/GTAC/web/css/less/pages/map.less */
+  /* line 380, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
   100% {
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -360,24 +429,166 @@ BODY {
     -ms-filter: blur(0px);
   }
 }
+/* line 390, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map .removeGuessedText {
+  -webkit-animation-name: removeGuessedTextAni;
+  -moz-animation-name: removeGuessedTextAni;
+  -o-animation-name: removeGuessedTextAni;
+  animation-name: removeGuessedTextAni;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -moz-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -o-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: liner;
+  /* Chrome, Safari, Opera */
+  animation-timing-function: liner;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+}
+/* line 415, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map .removeRealText {
+  -webkit-animation-name: removeGuessedTextAni;
+  -moz-animation-name: removeGuessedTextAni;
+  -o-animation-name: removeGuessedTextAni;
+  animation-name: removeGuessedTextAni;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -moz-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -o-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: liner;
+  /* Chrome, Safari, Opera */
+  animation-timing-function: liner;
+  -webkit-animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+}
+@keyframes removeGuessedTextAni {
+  /* line 443, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 446, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes removeGuessedTextAni {
+  /* line 451, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 454, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes removeGuessedTextAni {
+  /* line 459, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 462, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes removeGuessedTextAni {
+  /* line 467, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 470, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+@-o-keyframes removeGuessedTextAni {
+  /* line 475, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  0% {
+    opacity: 1;
+  }
+  /* line 478, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+  100% {
+    opacity: 0;
+  }
+}
+/* line 483, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map .dynamicGuessMapHeight {
+  -webkit-animation-name: aniHeightGuessMap;
+  -moz-animation-name: aniHeightGuessMap;
+  -o-animation-name: aniHeightGuessMap;
+  animation-name: aniHeightGuessMap;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -moz-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -o-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: liner;
+  /* Chrome, Safari, Opera */
+  animation-timing-function: liner;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+}
+/* line 503, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/pages/map.less */
+#map .dynamicRealMapHeight {
+  -webkit-animation-name: aniHeightRealMap;
+  -moz-animation-name: aniHeightRealMap;
+  -o-animation-name: aniHeightRealMap;
+  animation-name: aniHeightRealMap;
+  -webkit-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -moz-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  -o-animation-fill-mode: forwards;
+  /* Chrome, Safari, Opera */
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: liner;
+  /* Chrome, Safari, Opera */
+  animation-timing-function: liner;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+}
 /* Navigation Links */
-/* line 2, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 2, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav {
   text-align: center;
 }
-/* line 4, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 4, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav #menu {
   opacity: 1;
 }
-/* line 8, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 8, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav #menu-options {
   display: none;
 }
-/* line 14, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 14, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav ul {
   display: inline-block;
 }
-/* line 18, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 18, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav ul li {
   float: left;
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -390,7 +601,7 @@ nav ul li {
   width: 120px;
   top: 0px;
 }
-/* line 28, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 28, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav ul li a {
   -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
   -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -406,7 +617,7 @@ nav ul li a {
   outline: 0;
   text-decoration: none;
 }
-/* line 43, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 43, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav ul li a.active {
   -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
   -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -416,7 +627,7 @@ nav ul li a.active {
   font-weight: bold;
   top: 0;
 }
-/* line 54, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/desktop.less */
+/* line 54, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/desktop.less */
 nav ul li:hover,
 nav ul li.active {
   -webkit-transition: background-color 0.4s ease-in-out;
@@ -426,11 +637,11 @@ nav ul li.active {
   background-color: #000000;
 }
 @media only screen and (max-width: 720px), screen and (max-device-width: 480px) and (min-device-width: 320px) {
-  /* line 3, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 3, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav {
     text-align: right;
   }
-  /* line 5, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 5, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav #menu-options {
     display: block;
     position: absolute;
@@ -449,29 +660,29 @@ nav ul li.active {
     font-weight: bold;
     color: #000000;
   }
-  /* line 24, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 24, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav #menu {
     display: inline-block;
     margin-top: 55px;
     opacity: 0.7;
   }
-  /* line 29, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 29, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav #menu .fold {
     opacity: 0;
   }
-  /* line 34, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 34, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav .opacity-off {
     opacity: 1 !important;
   }
-  /* line 37, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 37, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav .opacity-on {
     opacity: 0.7 !important;
   }
-  /* line 40, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 40, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav .opacity-full {
     opacity: 0 !important;
   }
-  /* line 46, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 46, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav ul {
     padding: 10px 0 10px 0 ;
     -webkit-border-radius: 0px 0px 0px 8px;
@@ -481,7 +692,7 @@ nav ul li.active {
     border-radius: 0px 0px 0px 8px;
     background-clip: padding-box;
   }
-  /* line 51, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 51, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav ul li {
     -webkit-transition: background-color 0.4s ease-in-out;
     -moz-transition: background-color 0.4s ease-in-out;
@@ -490,7 +701,7 @@ nav ul li.active {
     float: none;
     text-align: center;
   }
-  /* line 53, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 53, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav ul li a {
     -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
     -moz-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -503,7 +714,7 @@ nav ul li.active {
     text-decoration: none;
     outline: 0;
   }
-  /* line 64, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 64, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav ul li a.active {
     display: inline;
     -webkit-transition: font-size 0.2s ease-in-out, background-color 0.4s ease-in-out, top 0.1s ease-in-out;
@@ -515,11 +726,11 @@ nav ul li.active {
     top: 0;
     font-weight: bold;
   }
-  /* line 79, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 79, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav ul li .fold {
     top: -100px;
   }
-  /* line 84, /Users/ransnir/Documents/workspace/GTAC/web/css/less/resolutions/devices.less */
+  /* line 84, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/resolutions/devices.less */
   nav ul li:hover,
   nav ul li.active {
     -webkit-transition: background-color 0.4s ease-in-out;
@@ -529,12 +740,12 @@ nav ul li.active {
     background-color: #000000;
   }
 }
-/* line 6, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+/* line 6, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/app.less */
 header {
   position: relative;
   top: 0px;
 }
-/* line 56, /Users/ransnir/Documents/workspace/GTAC/web/css/less/base.less */
+/* line 56, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/base.less */
 section H1 {
   text-align: left;
   font-size: 52px;
@@ -542,21 +753,21 @@ section H1 {
   text-shadow: 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 /* UL LI */
-/* line 17, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+/* line 17, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/app.less */
 ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 /* Anchor */
-/* line 24, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+/* line 24, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/app.less */
 a {
   color: #00A2CA;
   text-decoration: none;
   z-index: 1;
   position: relative;
 }
-/* line 31, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+/* line 31, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/app.less */
 nav {
   display: none;
   background-color: #23242A;
@@ -566,7 +777,7 @@ nav {
   height: 55px;
   top: 0;
 }
-/* line 41, /Users/ransnir/Documents/workspace/GTAC/web/css/less/app.less */
+/* line 41, /Users/ransnir/Documents/workspace/GTAC_catjs_app/web/css/less/app.less */
 nav ul {
   background-color: #23242A;
 }
