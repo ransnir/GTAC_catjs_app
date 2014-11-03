@@ -6,22 +6,22 @@ _cat.core.declare('gtaccatjs.js.controllers.app.checkDis$$cat', {
     "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/js/controllers/app.js",
     "scrapinfo": {
       "start": {
-        "line": 100,
-        "col": 25
+        "line": 98,
+        "col": 13
       },
       "end": {
-        "line": 104,
-        "col": 27
+        "line": 102,
+        "col": 15
       }
     },
     "commentinfo": {
       "start": {
-        "line": 99,
-        "col": 24
+        "line": 97,
+        "col": 12
       },
       "end": {
-        "line": 105,
-        "col": 27
+        "line": 103,
+        "col": 15
       }
     },
     "single": {
@@ -59,7 +59,7 @@ _cat.core.declare('gtaccatjs.js.controllers.app.checkDis$$cat', {
     "arguments": ["thi$", "$scope"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_38f4e52d-35de-8893-96d1-b69c37306071",
+    "id": "scrap_5084fe99-4f47-c810-a605-08dac95cb91a",
     "$type": "js",
     "numCommands": 1,
     "pkgName": "gtaccatjs.js.controllers.app.checkDis"

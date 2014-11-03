@@ -1,10 +1,8 @@
-/*global define*/
-'use strict';
 
+'use strict';
 /**
  * The main controller for the our app
  */
-
 define(['app', 'common/manager', 'services/data', "directives/scrollto"], function (app, manager, appdata, scrolldirective) {
 
     app.controller('appController', ['appData', '$scope', "$interval", function(appData, $scope, $interval) {
@@ -23,10 +21,22 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
         $scope.pointB;
         $scope.clickGo = false;
 
+
         $scope.setMapHeight = function() {
             var newMapHeight = (($(window).height() / 2) + "px");
             $(".halfMap").css({"height" : newMapHeight});
             $("#startMap").css({"height" : (($(window).height()) + "px")});
+
+
+            var resizeText = function () {
+                var el = $(".mapText");
+
+                while(el.outerWidth() < (el.parent().width() *0.7)) {
+                    var elNewFontSize = (parseInt((el).css('font-size').slice(0, -2)) + 2) + 'px';
+                    (el).css({'font-size' : elNewFontSize});
+                }
+            }();
+
         };
 
         var updateRealLocation = function() {
@@ -79,7 +89,6 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
         var setSearchResult = function(details) {
             var geometry = (details.geometry.location);
             var newLatLng = [geometry.k, geometry.B];
-//            newLatLng = [47.669377,-122.196604];
             $scope.address = newLatLng;
             $scope.predictionLoc = newLatLng;
 
@@ -100,9 +109,17 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
             updateRealLocation();
             getSearchLocation();
 
+
+            $(".wrapLiveMap").removeClass(". hideLiveMap");
             $("#floatingUI").addClass("removeFloating");
             $("#startMap").addClass("removeFloating");
             $("#mapWrapper").addClass("removeBlur");
+
+            $("#guessedText").addClass("removeGuessedText");
+            $("#whereIamText").addClass("removeRealText");
+
+            dynamicAnimation();
+
             $scope.mapZoom = 15;
             setTimeout(function() {
                 $("#floatingUI").remove();
@@ -111,6 +128,58 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
 
         };
+
+        var dynamicAnimation = function() {
+            $("<style>")
+                .prop("type", "text/css")
+                .html("@-webkit-keyframes aniHeightGuessMap {\n" +
+                    "0% {height : " + (($(window).height()) + "px") + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@keyframes aniHeightGuessMap {\n" +
+                    "0% {height : " + (($(window).height()) + "px") + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@-moz-keyframes aniHeightGuessMap {\n" +
+                    "0% {height : " + (($(window).height()) + "px") + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@-ms-keyframes aniHeightGuessMap {\n" +
+                    "0% {height : " + (($(window).height()) + "px") + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@-o-keyframes aniHeightGuessMap {\n" +
+                    "0% {height : " + (($(window).height()) + "px") + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+
+                    "@-webkit-keyframes aniHeightRealMap {\n" +
+                    "0% {height : " + "0px" + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@keyframes aniHeightRealMap {\n" +
+                    "0% {height : " + "0px" + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@-moz-keyframes aniHeightRealMap {\n" +
+                    "0% {height : " + "0px" + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@-ms-keyframes aniHeightRealMap {\n" +
+                    "0% {height : " + "0px" + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n" +
+                    "@-o-keyframes aniHeightRealMap {\n" +
+                    "0% {height : " + "0px" + "}\n" +
+                    "100% {height : " + (($(window).height() / 2) + "px") + "}\n" +
+                    "}\n"
+
+            )
+                .appendTo("head");
+
+            $("#guessmap").addClass("dynamicGuessMapHeight");
+            $("#realmap").addClass("dynamicRealMapHeight");
+        }
 
         $scope.keyboardManagment = function() {
             if ($scope.keyboardOn) {

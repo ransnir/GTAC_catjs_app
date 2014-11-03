@@ -1,7 +1,7 @@
 {
   "files": {
     "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/js/config.js": {
-      "scrap_1c3999be-92e1-5fe7-8c33-f71891adf89f": {
+      "scrap_5a565a4b-1851-5bcd-113d-ec1e380ab4dd": {
         "require": ["/cat/lib/cat.js"],
         "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/js/config.js",
         "scrapinfo": {
@@ -24,7 +24,7 @@
             "col": 2
           }
         },
-        "name": "scrap_1c3999be-92e1-5fe7-8c33-f71891adf89f",
+        "name": "scrap_5a565a4b-1851-5bcd-113d-ec1e380ab4dd",
         "single": {
           "require": true,
           "file": true,
@@ -60,7 +60,7 @@
         "context": ["thi$"],
         "auto": false,
         "injectcode": true,
-        "id": "scrap_1c3999be-92e1-5fe7-8c33-f71891adf89f",
+        "id": "scrap_5a565a4b-1851-5bcd-113d-ec1e380ab4dd",
         "$type": "js",
         "injectinfo": {
           "start": {
@@ -82,22 +82,22 @@
         "file": "/Users/ransnir/Documents/workspace/GTAC_catjs_app/cat-project/target/gtaccatjs/js/controllers/app.js",
         "scrapinfo": {
           "start": {
-            "line": 100,
-            "col": 25
+            "line": 98,
+            "col": 13
           },
           "end": {
-            "line": 104,
-            "col": 27
+            "line": 102,
+            "col": 15
           }
         },
         "commentinfo": {
           "start": {
-            "line": 99,
-            "col": 24
+            "line": 97,
+            "col": 12
           },
           "end": {
-            "line": 105,
-            "col": 27
+            "line": 103,
+            "col": 15
           }
         },
         "single": {
@@ -135,18 +135,18 @@
         "arguments": ["thi$", "$scope"],
         "auto": true,
         "injectcode": false,
-        "id": "scrap_38f4e52d-35de-8893-96d1-b69c37306071",
+        "id": "scrap_5084fe99-4f47-c810-a605-08dac95cb91a",
         "$type": "js",
         "numCommands": 1,
         "pkgName": "gtaccatjs.js.controllers.app.checkDis",
         "injectinfo": {
           "start": {
-            "line": 105,
-            "col": 27
+            "line": 103,
+            "col": 15
           },
           "end": {
-            "line": 105,
-            "col": 1112
+            "line": 103,
+            "col": 1099
           }
         }
       }
@@ -215,7 +215,7 @@
         "context": ["thi$"],
         "auto": true,
         "injectcode": false,
-        "id": "scrap_c93a0f45-4e1f-5667-ca99-6d8c1902502c",
+        "id": "scrap_ff278754-83d8-9a97-2ad4-4973975e3cd0",
         "$type": "html",
         "numCommands": 2,
         "pkgName": "gtaccatjs.pages.map.html.setWhere",
@@ -293,7 +293,7 @@
         "context": ["thi$"],
         "auto": true,
         "injectcode": false,
-        "id": "scrap_deba62af-f199-49d3-877d-1908b621da5a",
+        "id": "scrap_329170e6-17df-bc9a-3618-2627b44413cc",
         "$type": "html",
         "numCommands": 2,
         "pkgName": "gtaccatjs.pages.map.html.clickGo",

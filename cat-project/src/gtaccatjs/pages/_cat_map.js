@@ -62,7 +62,7 @@ _cat.core.declare('gtaccatjs.pages.map.html.setWhere$$cat', {
     "context": ["thi$"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_c93a0f45-4e1f-5667-ca99-6d8c1902502c",
+    "id": "scrap_ff278754-83d8-9a97-2ad4-4973975e3cd0",
     "$type": "html",
     "numCommands": 2,
     "pkgName": "gtaccatjs.pages.map.html.setWhere"
@@ -159,7 +159,7 @@ _cat.core.declare('gtaccatjs.pages.map.html.clickGo$$cat', {
     "context": ["thi$"],
     "auto": true,
     "injectcode": false,
-    "id": "scrap_deba62af-f199-49d3-877d-1908b621da5a",
+    "id": "scrap_329170e6-17df-bc9a-3618-2627b44413cc",
     "$type": "html",
     "numCommands": 2,
     "pkgName": "gtaccatjs.pages.map.html.clickGo"

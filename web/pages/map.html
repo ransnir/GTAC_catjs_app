@@ -9,13 +9,15 @@
                     <label id="fakeLabel" class="control-label" for="inputWhere"></label>
 
 
-                    <!--
+
+                          <!--
                           @[scrap
                              @@name setWhere
                              @@embed true
-                             @@jqm setText("#inputWhere", "hp software israel")
+                             @@jqm setText("#inputWhere", "google kirkland")
                           ]@
-                    -->
+                          -->
+
                     <input ng-model="searchText" class="form-control" id="inputWhere"
                            ng-blur="keyboardManagment()" ng-focus="keyboardManagment()">
                     <span class="glyphicon gps-icon form-control-feedback"></span>
@@ -25,12 +27,13 @@
 
 
         <!--
-              @[scrap
-                 @@name clickGo
-                 @@embed true
-                 @@jqm click("#goBtn")
-              ]@
+        @[scrap
+            @@name clickGo
+            @@embed true
+            @@jqm click("#goBtn")
+        ]@
         -->
+
         <div ng-style="setDynamicHeight(true)" id="wrapperGoBtn">
             <button id="goBtn" class="btn btn-default" ng-click="go()">GO!</button>
         </div>
@@ -38,17 +41,34 @@
     </div>
 </div>
 
-        <div id="mapWrapper">
-            <map ng-style="setMapHeight()" id="startMap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}">
-            </map>
+<div id="mapWrapper">
 
-            <map ng-style="setMapHeight()" class="halfMap" id="guessmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}" ng-model="address" ng-model="mapZoom">
-                <marker position="{{predictionLoc}}" ng-model="predictionLoc"></marker>
-            </map>
+                <map ng-style="setMapHeight()" id="startMap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}">
+                </map>
+            <div id="wrapGussedMap" class="wrapLiveMap hideLiveMap">
+                <div id="guessedText" class="hoverTextMap">
+                    <p class="mapText">
+                        I guessed I am at
+                    </p>
 
-            <map ng-style="setMapHeight()" class="halfMap" id="realmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{realLoc}}" ng-model="realLoc" ng-model="mapZoom">
-                <marker position="{{realLoc}}" ng-model="realLoc"></marker>
-            </map>
+                </div>
+                <map ng-style="setMapHeight()" class="halfMap" id="guessmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{address}}" ng-model="address" ng-model="mapZoom">
+                    <marker position="{{predictionLoc}}" ng-model="predictionLoc"></marker>
+                </map>
+
+            </div>
+            <div id="wrapRealMap" class="wrapLiveMap hideLiveMap">
+                <div id="whereIamText" class="hoverTextMap">
+                    <p class="mapText">
+                        Where I really am
+                    </p>
+                </div>
+                <map ng-style="setMapHeight()" class="halfMap" id="realmap" disable-default-u-i="true" zoom="{{mapZoom}}" center="{{realLoc}}" ng-model="realLoc" ng-model="mapZoom">
+                    <marker position="{{realLoc}}" ng-model="realLoc"></marker>
+                </map>
+
+            </div>
 
 
         </div>
+

@@ -1,28 +1,11 @@
-_cat.core.define("gtaccatjs.js.controllers.app.menuTest", function() {
+_cat.core.define("gtaccatjs.js.controllers.app.checkDis", function() {
 
-  var pkgName = "gtaccatjs.js.controllers.app.menuTest";
-
-  return {
-
-    /**
-     * Init functionality for scrap gtaccatjs.js.controllers.app.menuTest
-     *
-     * @param content CAT Context object
-     */
-    init: function(context) {
-
-    }
-  };
-
-}());
-_cat.core.define("gtaccatjs.js.controllers.app.menuItemsAction", function() {
-
-  var pkgName = "gtaccatjs.js.controllers.app.menuItemsAction";
+  var pkgName = "gtaccatjs.js.controllers.app.checkDis";
 
   return {
 
     /**
-     * Init functionality for scrap gtaccatjs.js.controllers.app.menuItemsAction
+     * Init functionality for scrap gtaccatjs.js.controllers.app.checkDis
      *
      * @param content CAT Context object
      */
