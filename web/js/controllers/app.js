@@ -88,7 +88,7 @@ define(['app', 'common/manager', 'services/data', "directives/scrollto"], functi
 
         var setSearchResult = function(details) {
             var geometry = (details.geometry.location);
-            var newLatLng = [geometry.k, geometry.B];
+            var newLatLng = [geometry.A, geometry.F] // [geometry.k, geometry.B];
             $scope.address = newLatLng;
             $scope.predictionLoc = newLatLng;
 
